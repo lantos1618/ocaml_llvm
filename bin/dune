@@ -1,0 +1,12 @@
+(executable
+ (public_name my_project)
+ (name main)
+ (libraries 
+  my_project   
+  llvm
+  llvm.executionengine
+  ctypes-foreign
+
+ )
+ ; ignore unused variables warning
+ (flags (:standard -w -a)))
